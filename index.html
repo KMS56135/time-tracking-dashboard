@@ -14,91 +14,28 @@
     <link rel="stylesheet" href="./src/dist/styles.css" />
     <title>Frontend Mentor | Time tracking dashboard</title>
     <script type="module">
-      import Main from "./index.js";
+      import Main from "./src/js/main.js";
 
       let main = new Main();
 
       main.render().then(() => console.log("Страница готова!"));
     </script>
   </head>
-  <body>
-    Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-    <!-- daily -->
-    Previous - 7hrs
-    <!-- daily -->
-    32hrs
-    <!-- weekly -->
-    Previous - 36hrs
-    <!-- weekly -->
-    103hrs
-    <!-- monthly -->
-    Previous - 128hrs
-    <!-- monthly -->
-
-    Play 1hr
-    <!-- daily -->
-    Previous - 2hrs
-    <!-- daily -->
-    10hrs
-    <!-- weekly -->
-    Previous - 8hrs
-    <!-- weekly -->
-    23hrs
-    <!-- monthly -->
-    Previous - 29hrs
-    <!-- monthly -->
-
-    Study 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 7hrs
-    <!-- weekly -->
-    13hrs
-    <!-- monthly -->
-    Previous - 19hrs
-    <!-- monthly -->
-
-    Exercise 1hr
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 5hrs
-    <!-- weekly -->
-    11hrs
-    <!-- monthly -->
-    Previous - 18hrs
-    <!-- monthly -->
-
-    Social 1hr
-    <!-- daily -->
-    Previous - 3hrs
-    <!-- daily -->
-    5hrs
-    <!-- weekly -->
-    Previous - 10hrs
-    <!-- weekly -->
-    21hrs
-    <!-- monthly -->
-    Previous - 23hrs
-    <!-- monthly -->
-
-    Self Care 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    2hrs
-    <!-- weekly -->
-    Previous - 2hrs
-    <!-- weekly -->
-    7hrs
-    <!-- monthly -->
-    Previous - 11hrs
-    <!-- monthly -->
-
+  <body class="page">
+    <section class="dashboard container">
+      <div class="dashboard__wrapper">
+        <div class="dashboard__profile">
+          <img class="dashboard__image" src="./images/image-jeremy.png" alt="user-image"/>
+          <div class="dashboard__label">Report for</div>
+          <div class="dashboard__name">Jeremy Robson</div>
+        </div>
+        <div class="dashboard__time-period">
+          <button class="button" data-time-period-id="daily">Daily</button>
+          <button class="button button--current" data-time-period-id="weekly">Weekly</button>
+          <button class="button" data-time-period-id="monthly">Monthly</button>
+        </div>
+      </div>
+      <div class="stats" data-stats-grid-holder></div>
+    </section>
   </body>
 </html>

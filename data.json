@@ -1,5 +1,6 @@
 [
   {
+    "id": "work",
     "title": "Work",
     "svg": "icon-work.svg",
     "timeframes": {
@@ -18,6 +19,7 @@
     }
   },
   {
+    "id": "play",
     "title": "Play",
     "svg": "icon-play.svg",
     "timeframes": {
@@ -36,6 +38,7 @@
     }
   },
   {
+    "id": "study",
     "title": "Study",
     "svg": "icon-study.svg",
     "timeframes": {
@@ -54,6 +57,7 @@
     }
   },
   {
+    "id": "exercise",
     "title": "Exercise",
     "svg": "icon-exercise.svg",
     "timeframes": {
@@ -72,6 +76,7 @@
     }
   },
   {
+    "id": "social",
     "title": "Social",
     "svg": "icon-social.svg",
     "timeframes": {
@@ -90,6 +95,7 @@
     }
   },
   {
+    "id": "self-care",
     "title": "Self Care",
     "svg": "icon-self-care.svg",
     "timeframes": {

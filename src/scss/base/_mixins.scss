@@ -1,0 +1,6 @@
+@mixin text-style($size:$font-size-sm, $weight, $font:$font-family) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $font;
+  color: white;
+}

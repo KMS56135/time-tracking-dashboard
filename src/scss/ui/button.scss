@@ -1,0 +1,19 @@
+.button {
+  @include text-style($font-size-md, $font-weight-normal);
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: $desaturated-blue;
+  cursor: pointer;
+  
+  &:hover {
+    color: white;
+  }
+
+
+  &--current {
+    color: white;
+  }
+}
+

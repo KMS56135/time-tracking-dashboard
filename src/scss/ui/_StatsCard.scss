@@ -1,0 +1,84 @@
+.card {
+  height: 244px;
+  background-color: $dark-blue;
+  border-radius: 15px;
+
+
+  &__top {
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 17px;
+
+  }
+
+  &__body  {
+    padding: 29px 35px 32px 30px;
+    background-color: $dark-blue;
+    border-radius: 15px;
+    position: relative;
+    z-index: 10;
+
+    &:hover {
+      background: #33397a;
+      cursor: pointer;
+    }
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+  }
+
+  &__title {
+    margin-bottom: 25px; 
+    @include text-style($font-size-md, $font-weight-medium);
+  }
+
+
+  &__hours {
+    margin-bottom: 8px;
+    @include text-style($font-size-xl, $font-weight-light);
+  }
+
+  &__comparison {
+    @include text-style($font-size-sm, $font-weight-normal);
+    color: $pale-blue;
+  }
+
+  &--work {
+    background-color: $primary-light-red-work;
+  }
+
+  &--play {
+    background-color: $primary-soft-blue-play;
+  }
+
+  &--study {
+    background-color: $primary-light-red-study;
+  }
+  &--exercise {
+    background-color: $primary-lime-green-exercise;
+  }
+
+  &--social {
+    background-color: $primary-violet-social;
+  }
+
+  &--self-care {
+    background-color: $primary-soft-orange-self-care;
+  }
+}
+
+.ellipsis {
+  position: absolute;
+  top: 37px;
+  right: 35px
+}
