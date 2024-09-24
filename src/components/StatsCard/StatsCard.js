@@ -20,7 +20,7 @@ export default class StatsCard {
     return `
         <div class="card  card--${id}">
           <div class="card__top">
-            <img class="card__image" src='./imagesCard/${svg}' alt="${title}">
+            <img class="card__image" src='./images/${svg}' alt="${title}">
           </div>
           <div class="card__body">
             <div class="card__body-inner">
