@@ -1,8 +1,7 @@
-import createElement from "../lib/createElement.js";
+import createElement from "../../lib/createElement.js";
 export default class StatsCard {
-
   elem = null;
-  #data = []
+  #data = [];
 
   constructor(data) {
     this.#data = data || this.#data;
@@ -18,11 +17,10 @@ export default class StatsCard {
 
     const { current, previous } = timeframe;
 
-  
     return `
         <div class="card  card--${id}">
           <div class="card__top">
-            <img class="card__image" src='./images/${svg}' alt="${title}">
+            <img class="card__image" src='./imagesCard/${svg}' alt="${title}">
           </div>
           <div class="card__body">
             <div class="card__body-inner">
@@ -35,10 +33,9 @@ export default class StatsCard {
         </div>
     `;
   }
-  
 
   #render() {
     this.elem = createElement(this.#template());
-    return this.elem
+    return this.elem;
   }
 }
