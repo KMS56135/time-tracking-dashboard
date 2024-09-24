@@ -1,9 +1,10 @@
 .dashboard {
+  height: 100vh;
   display: grid;
   grid-template-columns: 255px 1fr;
   grid-template-rows: 518px;
   gap: 30px;
-  padding-top: 183px;
+  place-content: center;
 
   @media only screen and (max-width: 375px) {
     padding: 81px 24px;
